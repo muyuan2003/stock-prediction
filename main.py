@@ -1,6 +1,6 @@
 import yfinance as yf
 import beta
-import regression
+import forecasting
 
 stocks_list = []
 
@@ -24,7 +24,7 @@ for stock in stocks_list:
             print(f"Beta for {stock.upper()}:")
             print(beta.beta_calculation(stock))
             print(f"Stock price predictions for {stock.upper()} for the next 2 weeks:")
-            print(regression.price_prediction(stock))
+            print(forecasting.price_prediction(stock))
             print(" ")
 
     except:
